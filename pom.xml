@@ -35,7 +35,7 @@
 			      <uri>https://anypoint.mulesoft.com</uri>
 			      <muleVersion>4.3.0</muleVersion>
 			      <username>dmorfindiaz-training-4</username>
-			      <password>Nodavid@123</password>
+			      <password>*****</password>
 			      <applicationName>jenkins-training</applicationName>
 			      <environment>Sandbox</environment>
 			      <region>us-east-1</region>
@@ -91,14 +91,6 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    
-<!-- <distributionManagement> -->
-<!--     <repository> -->
-<!--       <id>Repository</id> -->
-<!--       <name>Corporate Repository</name> -->
-<!--       <url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/capgemini/maven</url> -->
-<!--       <layout>default</layout> -->
-<!--     </repository> -->
-<!--   </distributionManagement> -->
+
 
 </project>
