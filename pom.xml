@@ -25,26 +25,28 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.0.0</version>
 			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-					<cloudHubDeployment>
-					    <uri>https://anypoint.mulesoft.com</uri>
-					    <muleVersion>4.3.0</muleVersion>
-					    <!-- Deploy User Parameter -->
-					    <username>dmorfindiaz-training-4</username>
-					    <password>Nodavid@123</password>
-					    <!-- Environment Parameter -->
-					    <environment>sandbox</environment>
-					    <applicationName>jenkins-test</applicationName>
-					    <businessGroup>capgemini</businessGroup>
-					    <workerType>1</workerType>
-					</cloudHubDeployment>
-				</configuration>
-			</plugin>
+<plugin>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>mule-maven-plugin</artifactId>
+  <version>3.4.2</version>
+  <extensions>true</extensions>
+  <configuration>
+    <cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>4.3.0</muleVersion>
+      <username>dmorfindiaz-training-4</username>
+      <password>Nodavid@123</password>
+      <applicationName>jenkins-training</applicationName>
+      <environment>sandbox</environment>
+      <region>us-east-1</region>
+      <workers>1</workers>
+      <workerType>micro</workerType>
+      <properties>
+        <key>value</key>
+      </properties>
+    </cloudHubDeployment>
+  </configuration>
+</plugin>
 		</plugins>
 	</build>
 
