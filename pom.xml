@@ -31,6 +31,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+					    <uri>https://anypoint.mulesoft.com</uri>
+					    <muleVersion>4.3.0</muleVersion>
+					    <!-- Deploy User Parameter -->
+					    <username>dmorfindiaz-training-4</username>
+					    <password>Nodavid@123</password>
+					    <!-- Environment Parameter -->
+					    <environment>sandbox</environment>
+					    <applicationName>jenkins-test</applicationName>
+					    <businessGroup>capgemini</businessGroup>
+					    <workerType>1</workerType>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
